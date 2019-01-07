@@ -19,6 +19,49 @@
     <li>"x" == "x" //True</li>
     <li>"x" == "y" //False</li>
     </ul>
-    <p></p>
+
+    <h2>The purpose of 'import java.util.Scanner' is:</h2>
+
+
+    <p>The use of import allows you to use that functionality defined some where else in that class you are currently in.</p>
+
+    <h4>Example:<h/4>;
+      <ul>
+      <li>import java.util.Scanner;</li>
+      <li>public class Example { </li>
+      <li> public class static void main(String[] args){</li>
+      <li>Scanner input = new Scanner(System.in);</li>
+      <li>System.out.println("What is your name?")</li>
+      <li>input.next();//program pauses and waits for an answer.</li>
+      <li>}</li>
+      <li>}</li>
+      </ul>
+
+      <h2>Math Object</h2>
+
+      <p>Math is a class built into java that contains several math related static members and methods. Which means you can use them without justifying the class. Names of classes are capitalized in java, so it's typed in as Math and not math.</p>
+
+      <p>Math.random() returns a random double value between 0 and 1 including 0 but never 1.</p>
+
+      <h2>Cast double to an int<h2>
+<p>A 'Double' holds a value that usually contains a number with a decimal point such as 1.99, 2.99. There are times when you want an integer value. You can change a 'double' to an 'integer' by putting a (int) front of it.</p>
+
+<h4>Example:</h4>
+<ul>
+ <li>(Int) 11.22 // 11 </li>
+  <li> (Int) 12.11 // 12 </li>
+<p>The number after the decimal is dropped and the number before the decimal gets returned</p>
+
+<p>An example where you can use this is when generating a random number. Considering Math.random() only creates a double between 0 and .999999… you can't get integers from it. One of the ways to get integers from Math.random() you would multiply the return with an integer than cast it to a int.</p>
+
+<h4>Example:</h>
+<ul>
+  <li>(Int)(Math.random() * 11) //gives you a range between 0 and 10</li>
+  <li>((Int)(Math.random() * 20) + 1) // gives you range between 1 and 20</li>
+</ul>
+
+
+
+
   </body>
 </html>
